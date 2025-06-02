@@ -1,3 +1,7 @@
+const container = document.getElementById("tabela");
+const tooltip = document.getElementById("tooltip");
+ 
+
 const elementos = [
 
   {
@@ -6,7 +10,7 @@ const elementos = [
     "raioAtomico": "37",
     "pontoDeEbulicao": "20",
     "tipoDeLigacao": "diatômica",
-    "corHexCpk": "FFFFFF",
+    "corHexCpk": "A1D344",
     "densidade": "8.99E-5",
     "afinidadeEletronica": "-73",
     "eletronegatividade": "2.2",
@@ -102,7 +106,7 @@ const elementos = [
     "raioAtomico": "82",
     "pontoDeEbulicao": "4273",
     "tipoDeLigacao": "rede covalente",
-    "corHexCpk": "2194D6",
+    "corHexCpk": "4DB6AC",
     "densidade": "2.46",
     "afinidadeEletronica": "-27",
     "eletronegatividade": "2.04",
@@ -126,7 +130,7 @@ const elementos = [
     "raioAtomico": "77",
     "pontoDeEbulicao": "4300",
     "tipoDeLigacao": "rede covalente",
-    "corHexCpk": "909090",
+    "corHexCpk": "A1D344",
     "densidade": "2.26",
     "afinidadeEletronica": "-154",
     "eletronegatividade": "2.55",
@@ -150,7 +154,7 @@ const elementos = [
     "raioAtomico": "75",
     "pontoDeEbulicao": "77",
     "tipoDeLigacao": "diatômica",
-    "corHexCpk": "3050F8",
+    "corHexCpk": "A1D344",
     "densidade": "0.001251",
     "afinidadeEletronica": "-7",
     "eletronegatividade": "3.04",
@@ -174,7 +178,7 @@ const elementos = [
     "raioAtomico": "73",
     "pontoDeEbulicao": "90",
     "tipoDeLigacao": "diatômica",
-    "corHexCpk": "FF0D0D",
+    "corHexCpk": "A1D344",
     "densidade": "0.001429",
     "afinidadeEletronica": "-141",
     "eletronegatividade": "3.44",
@@ -294,7 +298,7 @@ const elementos = [
     "raioAtomico": "118",
     "pontoDeEbulicao": "2792",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "BFA6A6",
+    "corHexCpk": "A2C7D3",
     "densidade": "2.7",
     "afinidadeEletronica": "-43",
     "eletronegatividade": "1.61",
@@ -318,7 +322,7 @@ const elementos = [
     "raioAtomico": "111",
     "pontoDeEbulicao": "3173",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "F0C8A0",
+    "corHexCpk": "4DB6AC",
     "densidade": "2.33",
     "afinidadeEletronica": "-134",
     "eletronegatividade": "1.9",
@@ -342,7 +346,7 @@ const elementos = [
     "raioAtomico": "106",
     "pontoDeEbulicao": "554",
     "tipoDeLigacao": "rede covalente",
-    "corHexCpk": "FF8000",
+    "corHexCpk": "A1D344",
     "densidade": "1.823",
     "afinidadeEletronica": "-72",
     "eletronegatividade": "2.19",
@@ -366,7 +370,7 @@ const elementos = [
     "raioAtomico": "102",
     "pontoDeEbulicao": "718",
     "tipoDeLigacao": "rede covalente",
-    "corHexCpk": "FFFF30",
+    "corHexCpk": "A1D344",
     "densidade": "1.96",
     "afinidadeEletronica": "-200",
     "eletronegatividade": "2.58",
@@ -486,7 +490,7 @@ const elementos = [
     "raioAtomico": "144",
     "pontoDeEbulicao": "3103",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "E6E6E6",
+    "corHexCpk": "EB8E8E",
     "densidade": "2.985",
     "afinidadeEletronica": "-18",
     "eletronegatividade": "1.36",
@@ -510,7 +514,7 @@ const elementos = [
     "raioAtomico": "136",
     "pontoDeEbulicao": "3560",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "BFC2C7",
+    "corHexCpk": "EB8E8E",
     "densidade": "4.507",
     "afinidadeEletronica": "-8",
     "eletronegatividade": "1.54",
@@ -534,7 +538,7 @@ const elementos = [
     "raioAtomico": "125",
     "pontoDeEbulicao": "3680",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "A6A6AB",
+    "corHexCpk": "EB8E8E",
     "densidade": "6.11",
     "afinidadeEletronica": "-51",
     "eletronegatividade": "1.63",
@@ -558,7 +562,7 @@ const elementos = [
     "raioAtomico": "127",
     "pontoDeEbulicao": "2944",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "8A99C7",
+    "corHexCpk": "EB8E8E",
     "densidade": "7.14",
     "afinidadeEletronica": "-64",
     "eletronegatividade": "1.66",
@@ -582,7 +586,7 @@ const elementos = [
     "raioAtomico": "139",
     "pontoDeEbulicao": "2334",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "9C7AC7",
+    "corHexCpk": "EB8E8E",
     "densidade": "7.47",
     "afinidadeEletronica": "0",
     "eletronegatividade": "1.55",
@@ -606,7 +610,7 @@ const elementos = [
     "raioAtomico": "125",
     "pontoDeEbulicao": "3134",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "E06633",
+    "corHexCpk": "EB8E8E",
     "densidade": "7.874",
     "afinidadeEletronica": "-16",
     "eletronegatividade": "1.83",
@@ -630,7 +634,7 @@ const elementos = [
     "raioAtomico": "126",
     "pontoDeEbulicao": "3200",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "F090A0",
+    "corHexCpk": "EB8E8E",
     "densidade": "8.9",
     "afinidadeEletronica": "-64",
     "eletronegatividade": "1.88",
@@ -654,7 +658,7 @@ const elementos = [
     "raioAtomico": "121",
     "pontoDeEbulicao": "3186",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "50D050",
+    "corHexCpk": "EB8E8E",
     "densidade": "8.908",
     "afinidadeEletronica": "-112",
     "eletronegatividade": "1.91",
@@ -678,7 +682,7 @@ const elementos = [
     "raioAtomico": "138",
     "pontoDeEbulicao": "3200",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "C88033",
+    "corHexCpk": "EB8E8E",
     "densidade": "8.92",
     "afinidadeEletronica": "-118",
     "eletronegatividade": "1.9",
@@ -702,7 +706,7 @@ const elementos = [
     "raioAtomico": "131",
     "pontoDeEbulicao": "1180",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "7D80B0",
+    "corHexCpk": "EB8E8E",
     "densidade": "7.14",
     "afinidadeEletronica": "0",
     "eletronegatividade": "1.65",
@@ -726,7 +730,7 @@ const elementos = [
     "raioAtomico": "126",
     "pontoDeEbulicao": "2477",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "C28F8F",
+    "corHexCpk": "A2C7D3",
     "densidade": "5.904",
     "afinidadeEletronica": "-29",
     "eletronegatividade": "1.81",
@@ -750,7 +754,7 @@ const elementos = [
     "raioAtomico": "122",
     "pontoDeEbulicao": "3093",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "668F8F",
+    "corHexCpk": "4DB6AC",
     "densidade": "5.323",
     "afinidadeEletronica": "-119",
     "eletronegatividade": "2.01",
@@ -774,7 +778,7 @@ const elementos = [
     "raioAtomico": "119",
     "pontoDeEbulicao": "887",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "BD80E3",
+    "corHexCpk": "4DB6AC",
     "densidade": "5.727",
     "afinidadeEletronica": "-78",
     "eletronegatividade": "2.18",
@@ -798,7 +802,7 @@ const elementos = [
     "raioAtomico": "116",
     "pontoDeEbulicao": "958",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "FFA100",
+    "corHexCpk": "A1D344",
     "densidade": "4.819",
     "afinidadeEletronica": "-195",
     "eletronegatividade": "2.55",
@@ -918,7 +922,7 @@ const elementos = [
     "raioAtomico": "162",
     "pontoDeEbulicao": "3618",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "94FFFF",
+    "corHexCpk": "EB8E8E",
     "densidade": "4.472",
     "afinidadeEletronica": "-30",
     "eletronegatividade": "1.22",
@@ -942,7 +946,7 @@ const elementos = [
     "raioAtomico": "148",
     "pontoDeEbulicao": "4682",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "94E0E0",
+    "corHexCpk": "EB8E8E",
     "densidade": "6.511",
     "afinidadeEletronica": "-41",
     "eletronegatividade": "1.33",
@@ -966,7 +970,7 @@ const elementos = [
     "raioAtomico": "137",
     "pontoDeEbulicao": "5017",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "73C2C9",
+    "corHexCpk": "EB8E8E",
     "densidade": "8.57",
     "afinidadeEletronica": "-86",
     "eletronegatividade": "1.6",
@@ -990,7 +994,7 @@ const elementos = [
     "raioAtomico": "145",
     "pontoDeEbulicao": "4912",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "54B5B5",
+    "corHexCpk": "EB8E8E",
     "densidade": "10.28",
     "afinidadeEletronica": "-72",
     "eletronegatividade": "2.16",
@@ -1014,7 +1018,7 @@ const elementos = [
     "raioAtomico": "156",
     "pontoDeEbulicao": "4538",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "3B9E9E",
+    "corHexCpk": "EB8E8E",
     "densidade": "11.5",
     "afinidadeEletronica": "-53",
     "eletronegatividade": "1.9",
@@ -1038,7 +1042,7 @@ const elementos = [
     "raioAtomico": "126",
     "pontoDeEbulicao": "4423",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "248F8F",
+    "corHexCpk": "EB8E8E",
     "densidade": "12.37",
     "afinidadeEletronica": "-101",
     "eletronegatividade": "2.2",
@@ -1062,7 +1066,7 @@ const elementos = [
     "raioAtomico": "135",
     "pontoDeEbulicao": "3968",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "0A7D8C",
+    "corHexCpk": "EB8E8E",
     "densidade": "12.45",
     "afinidadeEletronica": "-110",
     "eletronegatividade": "2.28",
@@ -1086,7 +1090,7 @@ const elementos = [
     "raioAtomico": "131",
     "pontoDeEbulicao": "3236",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "6985",
+    "corHexCpk": "EB8E8E",
     "densidade": "12.023",
     "afinidadeEletronica": "-54",
     "eletronegatividade": "2.2",
@@ -1110,7 +1114,7 @@ const elementos = [
     "raioAtomico": "153",
     "pontoDeEbulicao": "2435",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "C0C0C0",
+    "corHexCpk": "EB8E8E",
     "densidade": "10.49",
     "afinidadeEletronica": "-126",
     "eletronegatividade": "1.93",
@@ -1134,7 +1138,7 @@ const elementos = [
     "raioAtomico": "148",
     "pontoDeEbulicao": "1040",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "FFD98F",
+    "corHexCpk": "EB8E8E",
     "densidade": "8.65",
     "afinidadeEletronica": "0",
     "eletronegatividade": "1.69",
@@ -1158,7 +1162,7 @@ const elementos = [
     "raioAtomico": "144",
     "pontoDeEbulicao": "2345",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "A67573",
+    "corHexCpk": "A2C7D3",
     "densidade": "7.31",
     "afinidadeEletronica": "-29",
     "eletronegatividade": "1.78",
@@ -1182,7 +1186,7 @@ const elementos = [
     "raioAtomico": "141",
     "pontoDeEbulicao": "2875",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "668080",
+    "corHexCpk": "A2C7D3",
     "densidade": "7.31",
     "afinidadeEletronica": "-107",
     "eletronegatividade": "1.96",
@@ -1206,7 +1210,7 @@ const elementos = [
     "raioAtomico": "138",
     "pontoDeEbulicao": "1860",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "9E63B5",
+    "corHexCpk": "4DB6AC",
     "densidade": "6.697",
     "afinidadeEletronica": "-103",
     "eletronegatividade": "2.05",
@@ -1230,7 +1234,7 @@ const elementos = [
     "raioAtomico": "135",
     "pontoDeEbulicao": "1261",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "D47A00",
+    "corHexCpk": "4DB6AC",
     "densidade": "6.24",
     "afinidadeEletronica": "-190",
     "eletronegatividade": "2.1",
@@ -1710,7 +1714,7 @@ const elementos = [
     "raioAtomico": "150",
     "pontoDeEbulicao": "4876",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "4DC2FF",
+    "corHexCpk": "EB8E8E",
     "densidade": "13.31",
     "afinidadeEletronica": "0",
     "eletronegatividade": "1.3",
@@ -1734,7 +1738,7 @@ const elementos = [
     "raioAtomico": "138",
     "pontoDeEbulicao": "5731",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "4DA6FF",
+    "corHexCpk": "EB8E8E",
     "densidade": "16.65",
     "afinidadeEletronica": "-31",
     "eletronegatividade": "1.5",
@@ -1758,7 +1762,7 @@ const elementos = [
     "raioAtomico": "146",
     "pontoDeEbulicao": "5828",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "2194D6",
+    "corHexCpk": "EB8E8E",
     "densidade": "19.25",
     "afinidadeEletronica": "-79",
     "eletronegatividade": "2.36",
@@ -1782,7 +1786,7 @@ const elementos = [
     "raioAtomico": "159",
     "pontoDeEbulicao": "5869",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "267DAB",
+    "corHexCpk": "EB8E8E",
     "densidade": "21.02",
     "afinidadeEletronica": "-15",
     "eletronegatividade": "1.9",
@@ -1806,7 +1810,7 @@ const elementos = [
     "raioAtomico": "128",
     "pontoDeEbulicao": "5285",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "266696",
+    "corHexCpk": "EB8E8E",
     "densidade": "22.61",
     "afinidadeEletronica": "-106",
     "eletronegatividade": "2.2",
@@ -1830,7 +1834,7 @@ const elementos = [
     "raioAtomico": "137",
     "pontoDeEbulicao": "4701",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "175487",
+    "corHexCpk": "EB8E8E",
     "densidade": "22.65",
     "afinidadeEletronica": "-151",
     "eletronegatividade": "2.2",
@@ -1854,7 +1858,7 @@ const elementos = [
     "raioAtomico": "128",
     "pontoDeEbulicao": "4098",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "D0D0E0",
+    "corHexCpk": "EB8E8E",
     "densidade": "21.09",
     "afinidadeEletronica": "-205",
     "eletronegatividade": "2.28",
@@ -1878,7 +1882,7 @@ const elementos = [
     "raioAtomico": "144",
     "pontoDeEbulicao": "3129",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "FFD123",
+    "corHexCpk": "EB8E8E",
     "densidade": "19.3",
     "afinidadeEletronica": "-223",
     "eletronegatividade": "2.54",
@@ -1902,7 +1906,7 @@ const elementos = [
     "raioAtomico": "149",
     "pontoDeEbulicao": "630",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "B8B8D0",
+    "corHexCpk": "EB8E8E",
     "densidade": "13.534",
     "afinidadeEletronica": "0",
     "eletronegatividade": "2",
@@ -1926,7 +1930,7 @@ const elementos = [
     "raioAtomico": "148",
     "pontoDeEbulicao": "1746",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "A6544D",
+    "corHexCpk": "A2C7D3",
     "densidade": "11.85",
     "afinidadeEletronica": "-19",
     "eletronegatividade": "2.04",
@@ -1950,7 +1954,7 @@ const elementos = [
     "raioAtomico": "147",
     "pontoDeEbulicao": "2022",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "575961",
+    "corHexCpk": "A2C7D3",
     "densidade": "11.34",
     "afinidadeEletronica": "-35",
     "eletronegatividade": "2.33",
@@ -1974,7 +1978,7 @@ const elementos = [
     "raioAtomico": "146",
     "pontoDeEbulicao": "1837",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "9E4FB5",
+    "corHexCpk": "A2C7D3",
     "densidade": "9.78",
     "afinidadeEletronica": "-91",
     "eletronegatividade": "2.02",
@@ -1998,7 +2002,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "1235",
     "tipoDeLigacao": "metálica",
-    "corHexCpk": "AB5C00",
+    "corHexCpk": "4DB6AC",
     "densidade": "9.196",
     "afinidadeEletronica": "-183",
     "eletronegatividade": "2",
@@ -2478,7 +2482,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "CC0059",
+    "corHexCpk": "EB8E8E",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2502,7 +2506,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "D1004F",
+    "corHexCpk": "EB8E8E",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2526,7 +2530,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "D90045",
+    "corHexCpk": "EB8E8E",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2550,7 +2554,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "E00038",
+    "corHexCpk": "EB8E8E",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2574,7 +2578,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "E6002E",
+    "corHexCpk": "EB8E8E",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2598,7 +2602,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "EB0026",
+    "corHexCpk": "EB8E8E",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2622,7 +2626,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "",
+    "corHexCpk": "EB8E8E",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2646,7 +2650,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "",
+    "corHexCpk": "EB8E8E",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2670,7 +2674,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "",
+    "corHexCpk": "EB8E8E",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2694,7 +2698,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "",
+    "corHexCpk": "A2C7D3",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2718,7 +2722,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "",
+    "corHexCpk": "A2C7D3",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2742,7 +2746,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "",
+    "corHexCpk": "A2C7D3",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2766,7 +2770,7 @@ const elementos = [
     "raioAtomico": "",
     "pontoDeEbulicao": "",
     "tipoDeLigacao": "",
-    "corHexCpk": "",
+    "corHexCpk": "A2C7D3",
     "densidade": "",
     "afinidadeEletronica": "",
     "eletronegatividade": "",
@@ -2834,54 +2838,30 @@ const elementos = [
   }
 ];
 
-const container = document.getElementById("tabela");
-
 elementos.forEach(el => {
   const elemento = document.createElement("div");
   elemento.classList.add("elemento");
   elemento.style.gridRowStart = el.linha;
   elemento.style.gridColumnStart = el.coluna;
-  elemento.style.backgroundColor = `#${el.corHexCpk}`;
-
+  elemento.style.backgroundColor = `#${el.corHexCpk || 'ccc'}`;
   elemento.innerHTML = `<strong>${el.simbolo}</strong><br><small>${el.numeroAtomico}</small>`;
 
+  // Mostrar tooltip fixada ao passar o mouse
+  elemento.addEventListener("mouseenter", () => {
+    tooltip.style.display = "block";
+    tooltip.innerHTML = `
+      <strong>${el.nome} (${el.simbolo})</strong><br>
+      Nº atômico: ${el.numeroAtomico}<br>
+      Massa atômica: ${el.massaAtomica}<br>
+      Grupo: ${el.grupo || 'desconhecido'}<br>
+      Configuração: ${el.configuracaoEletronica}
+    `;
+  });
 
-  elemento.title = `${el.nome} (${el.numeroAtomico}) - ${el.massaAtomica}`;
+  // Esconder tooltip ao sair
+  elemento.addEventListener("mouseleave", () => {
+    tooltip.style.display = "none";
+  });
 
   container.appendChild(elemento);
 });
-
-const tabela = document.getElementById("tabela");
-const tooltip = document.createElement("div");
-tooltip.style.position = "absolute";
-tooltip.style.backgroundColor = "rgba(0,0,0,0.8)";
-tooltip.style.color = "white";
-tooltip.style.padding = "8px";
-tooltip.style.borderRadius = "5px";
-tooltip.style.fontSize = "12px";
-tooltip.style.display = "none";
-tooltip.style.pointerEvents = "none";
-tooltip.style.maxWidth = "250px";
-tooltip.style.zIndex = "1000";
-document.body.appendChild(tooltip);
-colecaoElementos.forEach((elemento) => {
-  const div = document.createElement("div");
-  div.classList.add("elemento");
-  div.style.gridRow = elemento.linha;
-  div.style.gridColumn = elemento.coluna;
-  div.style.backgroundColor = elemento.corGrupo || "#ccc";
-
-});
-
-tooltip.style.display = "block";
-  
-  div.addEventListener("mousemove", (e) => {
-    tooltip.style.left = e.pageX + 15 + "px";
-    tooltip.style.top = e.pageY + 15 + "px";
-  });
-  div.addEventListener("mouseleave", () => {
-    tooltip.style.display = "none";
-  });
-  tabela.appendChild(div);
- 
- 
