@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #525252;
 }
+
 .tabela-periodica {
   display: grid;
   grid-template-columns: repeat(28, 50px);
@@ -79,7 +80,7 @@ body {
   height: 120px;
   position: absolute;
   z-index: 15;
-  margin-top: 390px;
+  margin-top: -125px;
   margin-left: 8px;
 }
 
@@ -90,7 +91,6 @@ body {
   height: 120px;
   position: absolute;
   z-index: 15;
-  margin-top: 75px;
+  margin-top: -440px;
   margin-left: 378px;
 }
-

@@ -1,6 +1,3 @@
-const container = document.getElementById("tabela");
-const tooltip = document.getElementById("tooltip");
- 
 
 const elementos = [
 
@@ -2837,6 +2834,10 @@ const elementos = [
     "coluna": 18
   }
 ];
+
+const container = document.getElementById("tabela");
+const tooltip = document.getElementById("tooltip");
+ 
 
 elementos.forEach(el => {
   const elemento = document.createElement("div");
