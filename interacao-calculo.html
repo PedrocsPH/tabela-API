@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculos de Carga Elétrica</title>
-    <link rel="stylesheet" href="calculo.css">
+    <title>Cálculos de Interação</title>
+    <link rel="stylesheet" href="interacao-calculo.css">
 </head>
 <body>
     <header>
@@ -17,17 +17,17 @@
             <section class="content-section">
                 <p>Os cálculos estequiométricos, na química, são utilizados para determinar as quantidades de reagentes e produtos envolvidos em uma reação química.</p>
                 
-                <h2>Carga elétrica de um átomo</h2>
-                
+                <h2>Interação entre cargas em um átomo</h2>
                 <div class="formula-highlight">
-                    <p>Fórmula: <strong>Q = n * e</strong></p>
+                    <p>Fórmula: <strong>F=(K.q1.q2)/d²</strong></p>
                 </div>
-                
+
                 <div class="legend-box">
                     <p><strong>LEGENDA:</strong></p>
-                    <p><strong>Q</strong> — carga elétrica total (Coulomb)</p>
-                    <p><strong>n</strong> — número de elétrons em falta ou em excesso</p>
-                    <p><strong>e</strong> — carga elementar (1,602 * 10<sup>-19</sup> C)</p>
+                    <p><strong>F</strong> — força elétrica (em N – Newtons)</p>
+                    <p><strong>q1</strong> — carga do primeiro corpo (em C – Coulombs)</p>
+                    <p><strong>q2</strong> — carga do segundo corpo (em C – Coulombs)</p>
+                    <p><strong>d</strong> — distância entre os centros das cargas (em m – metros)</p>
                 </div>
             </section>
         </div>
@@ -35,14 +35,20 @@
         
         <div class="calculator-column">
             <div class="calculator-card">
-                <h2>Calculadora de Carga Elétrica</h2>
+                <h2>Calculadora de Interação Elétrica</h2>
                 
                 <form class="calculator-form">
-                    <label for="numero-eletrons">Número de elétrons (n):</label>
-                    <input type="number" id="numero-eletrons" placeholder="Ex: 2" min="0">
-                    
+                    <label for="carga1">Carga do primeiro corpo (q1):</label>
+                    <input type="number" id="carga1" placeholder="Ex: 1.6e-19" step="any">
+
+                    <label for="carga2">Carga do segundo corpo (q2):</label>
+                    <input type="number" id="carga2" placeholder="Ex: 1.6e-19" step="any">
+
+                    <label for="distancia">Distância entre as cargas (d):</label>
+                    <input type="number" id="distancia" placeholder="Ex: 0.1" step="any">
+
                     <p id="resultado"></p>
-                    
+
                     <div class="button-group">
                         <button type="button" class="button calculate-btn" onclick="calcular()">Calcular</button>
                         <button type="button" class="button clear-btn" onclick="limpar()">Limpar</button>
@@ -52,6 +58,6 @@
         </div>
     </div>
     
-    <script src="calculo.js"></script>
+    <script src="interacao-calculo.js"></script>
 </body>
 </html>
