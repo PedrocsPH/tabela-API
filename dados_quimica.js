@@ -2857,6 +2857,18 @@ elementos.forEach(el => {
       Grupo: ${el.grupo || 'desconhecido'}<br>
       Configuração: ${el.configuracaoEletronica}
     `;
+
+    document.getElementById('boxresultado').innerHTML = `<li>
+                                                               <a href="/tabela-API/calculo.html">Ver cálculo da carga elétrica</a>
+                                                             </li>`;
+  });
+
+  // Esconder tooltip ao sair
+  elemento.addEventListener("mouseleave", () => {
+    tooltip.style.display = "none";
+    document.getElementById('boxresultado').innerHTML = `<li>
+                                                               <a href="/tabela-API/calculo.html">Ver cálculo da carga elétrica</a>
+                                                             </li>`;
   });
 
   // Esconder tooltip ao sair
