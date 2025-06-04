@@ -2837,20 +2837,18 @@ const elementos = [
 const container = document.getElementById("tabela");
 const tooltip = document.getElementById("tooltip");
  
+ 
 elementos.forEach(el => {
   const elemento = document.createElement("div");
   elemento.classList.add("elemento");
   elemento.style.gridRowStart = el.linha;
   elemento.style.gridColumnStart = el.coluna;
-  elemento.style.backgroundColor = `#${el.corHexCpk || 'ccc'}`; // fallback cinza
- 
+  elemento.style.backgroundColor = `#${el.corHexCpk || 'ccc'}`;
   elemento.innerHTML = `<strong>${el.simbolo}</strong><br><small>${el.numeroAtomico}</small>`;
  
-  // Tooltip: mousemove
-  elemento.addEventListener("mousemove", (e) => {
+  // Mostrar tooltip fixada ao passar o mouse
+  elemento.addEventListener("mouseenter", () => {
     tooltip.style.display = "block";
-    tooltip.style.left = (e.pageX + 10) + "px";
-    tooltip.style.top = (e.pageY + 10) + "px";
     tooltip.innerHTML = `
       <strong>${el.nome} (${el.simbolo})</strong><br>
       Nº atômico: ${el.numeroAtomico}<br>
@@ -2858,14 +2856,23 @@ elementos.forEach(el => {
       Grupo: ${el.grupo || 'desconhecido'}<br>
       Configuração: ${el.configuracaoEletronica}
     `;
+ 
+   document.getElementById('boxresultado').innerHTML = `<li>
+                                                               <a href="/tabela-API/calculo.html">Ver cálculo da carga elétrica</a>
+                                                             </li>
+                                                              <li>
+                                                               <a href="/tabela-API/interacao-calculo.html">Ver cálculo da interação elétrica</a>
+                                                             </li>`;
   });
  
-  // Tooltip: mouseleave
+ 
+ 
+  // Esconder tooltip ao sair
   elemento.addEventListener("mouseleave", () => {
     tooltip.style.display = "none";
   });
  
   container.appendChild(elemento);
-});
+});        
  
  
